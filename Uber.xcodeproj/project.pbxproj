@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		D625C82129CC168300E2E900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625C82029CC168300E2E900 /* AppDelegate.swift */; };
 		D625C82329CC168300E2E900 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625C82229CC168300E2E900 /* SceneDelegate.swift */; };
-		D625C82529CC168300E2E900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625C82429CC168300E2E900 /* ViewController.swift */; };
 		D625C82829CC168300E2E900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D625C82629CC168300E2E900 /* Main.storyboard */; };
 		D625C82A29CC168400E2E900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D625C82929CC168400E2E900 /* Assets.xcassets */; };
 		D625C82D29CC168400E2E900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D625C82B29CC168400E2E900 /* LaunchScreen.storyboard */; };
+		D625C83A29CC178100E2E900 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625C83929CC178100E2E900 /* LoginController.swift */; };
+		D625C83C29CC1B8A00E2E900 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625C83B29CC1B8A00E2E900 /* Extensions.swift */; };
+		D625C83F29CC722D00E2E900 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625C83E29CC722D00E2E900 /* SignUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D625C81D29CC168300E2E900 /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D625C82029CC168300E2E900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D625C82229CC168300E2E900 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D625C82429CC168300E2E900 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D625C82729CC168300E2E900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D625C82929CC168400E2E900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D625C82C29CC168400E2E900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D625C82E29CC168400E2E900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D625C83929CC178100E2E900 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		D625C83B29CC1B8A00E2E900 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D625C83E29CC722D00E2E900 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		D625C81F29CC168300E2E900 /* Uber */ = {
 			isa = PBXGroup;
 			children = (
+				D625C83829CC16F600E2E900 /* Model */,
+				D625C83729CC16F500E2E900 /* View */,
+				D625C83D29CC720A00E2E900 /* Sign Up */,
+				D625C83629CC16F300E2E900 /* Login */,
+				D625C83529CC16F100E2E900 /* Service */,
+				D625C83429CC16E700E2E900 /* Utils */,
 				D625C82029CC168300E2E900 /* AppDelegate.swift */,
 				D625C82229CC168300E2E900 /* SceneDelegate.swift */,
-				D625C82429CC168300E2E900 /* ViewController.swift */,
 				D625C82629CC168300E2E900 /* Main.storyboard */,
 				D625C82929CC168400E2E900 /* Assets.xcassets */,
 				D625C82B29CC168400E2E900 /* LaunchScreen.storyboard */,
 				D625C82E29CC168400E2E900 /* Info.plist */,
 			);
 			path = Uber;
+			sourceTree = "<group>";
+		};
+		D625C83429CC16E700E2E900 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D625C83B29CC1B8A00E2E900 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D625C83529CC16F100E2E900 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D625C83629CC16F300E2E900 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D625C83929CC178100E2E900 /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D625C83729CC16F500E2E900 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D625C83829CC16F600E2E900 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D625C83D29CC720A00E2E900 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				D625C83E29CC722D00E2E900 /* SignUpController.swift */,
+			);
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D625C82529CC168300E2E900 /* ViewController.swift in Sources */,
+				D625C83F29CC722D00E2E900 /* SignUpController.swift in Sources */,
 				D625C82129CC168300E2E900 /* AppDelegate.swift in Sources */,
+				D625C83A29CC178100E2E900 /* LoginController.swift in Sources */,
 				D625C82329CC168300E2E900 /* SceneDelegate.swift in Sources */,
+				D625C83C29CC1B8A00E2E900 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
